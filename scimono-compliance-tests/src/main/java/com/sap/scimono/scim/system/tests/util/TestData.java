@@ -117,7 +117,7 @@ public class TestData {
             .setFamilyName("Angelova")
             .setHonorificSuffix("II")
             .build())
-        .setDisplayName(name)
+        .addEmail(new Email.Builder().setValue(String.format("test%s@example.com", UUID.randomUUID())).setType(Email.Type.WORK).build())
         .setActive(true);
     // @formatter:on
   }
